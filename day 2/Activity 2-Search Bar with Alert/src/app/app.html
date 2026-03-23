@@ -1,0 +1,6 @@
+<search (searchEmitter)="filterData($event)"></search>
+<hr>
+<app-users
+    *ngFor="let temp of users"
+    [selectedUser]="temp"
+></app-users>
