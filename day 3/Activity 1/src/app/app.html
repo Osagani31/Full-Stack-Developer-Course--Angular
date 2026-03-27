@@ -1,0 +1,14 @@
+<p *ngIf="isLoggedIn">Welcome!...</p>
+<hr>
+<ul>
+  <li *ngFor="let temp of users">
+    {{temp}}
+  </li>
+</ul>
+<hr>
+<div [ngSwitch]="role">
+  <p *ngSwitchCase="'ADMIN'">Admin Panel</p>
+  <p *ngSwitchCase="'HOST'">Super Admin Panel</p>
+  <p *ngSwitchCase="'USER'">User Panel</p>
+  <p *ngSwitchDefault>Guest User Panel</p>
+</div>

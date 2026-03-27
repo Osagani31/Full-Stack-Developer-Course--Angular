@@ -1,0 +1,19 @@
+<p *ngIf="true">Welecom</p>
+
+@if (false) {
+  <p>Hi Team</p>
+}
+@for (item of items; track $index) {
+  <li>{{item}}-{{$index}}</li>
+}
+@switch (role) {
+  @case ('admin') {
+    <p>Admin</p>
+  }
+  @case ('user') {
+    <p>user</p>
+  }
+  @default {
+    <p>Default</p>
+  }
+}
